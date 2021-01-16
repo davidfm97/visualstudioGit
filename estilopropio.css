@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "runaport";
+  src: url("fuentes/CvltRvneBold.ttf");
+}
+@font-face {
+  font-family: "runas";
+  src: url("fuentes/Runic.ttf");
+}
+
+.has-vertically-aligned-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "runaport";
+  width: 100%;
+  min-height: 100%;
+}
+
+.header-wrapper {
+  padding-bottom: 30px;
+}
+
+.hero {
+  background-image: url(img/portada.jpg);
+  background: linear-gradient(rgba(125, 80, 52, 0.65), rgba(197, 154, 103, 0.65)), rgba(0, 0, 0, 0.55) url("img/portada.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  font-family: "runaport";
+}
+
+.hero .title {
+  font-family: "runaport";
+  transform: rotate(-5deg);
+  font-size: 5rem;
+  color: whitesmoke;
+}
+
+.hero .subtitle {
+  font-family: "runas";
+  padding: 5px;
+  color: whitesmoke;
+}
+
+.hero .hero-foot {
+  height: 50px;
+  background: #1f292a;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.082);
+}
+
+@media (max-width: 599px) {
+  .hero .hero-foot {
+    display: none;
+  }
+}
+
+.hero .hero-foot .hero-foot--wrapper {
+  margin: 7px auto;
+  height: 50px;
+}
+
+.hero .hero-foot .hero-foot--wrapper .hero-menu-desktop {
+  line-height: 38px;
+  font-weight: 600;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  font-size: 2.5rem;
+}
+
+.hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li {
+  display: inline-block;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li.is-active a {
+  border-bottom: 2px solid #c59a67;
+}
+
+.hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li a {
+  color: #c59a67;
+}
+
+.hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li a:hover {
+  color: #c59a67;
+  transition: all .2s ease-in-out;
+  border-bottom: 2px solid #c59a67;
+}
